@@ -24,8 +24,6 @@ document.addEventListener('scroll', function () {
 /////////// Nav Bar ///////////
 
 var navbar = document.getElementById('navbar');
-var vh = window.innerHeight;
-
 /////////// Menu ///////////
 
 var menuBtn = document.getElementById('menu-btn');
