@@ -42,6 +42,7 @@ body {
 }
 
 .back .tilde {
+    top: 5%;
     padding-bottom: 10px;
     color: floralwhite;
     font-size: 16vw;
@@ -51,7 +52,8 @@ body {
 
 .back .tilde.second {
     right: 0;
-    bottom: 0%;
+    top: 95%;
+    transform: translateY(-100%);
 }
 
 .back .dash {
@@ -72,9 +74,11 @@ body {
 
 .back h2.dots {
     position: absolute;
-    font-size: 80px;
-    line-height: 0;
-    top: 100%;
+    top: 50%;
+    left: 0;
+    font-size: 50px;
+    line-height: 10px;
+    transform: rotate(90deg);
 }
 
 #dot-wrap {
