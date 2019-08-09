@@ -1,11 +1,21 @@
+a {
+    color: #D6CE07; 
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
 h1 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 900;
     font-size: 20vw;
+    text-align: center;
 }
 
 p {
     font-family: 'Barlow Semi Condensed', sans-serif;
+    color: aliceblue;
 }
 
 #one {

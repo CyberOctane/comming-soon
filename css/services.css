@@ -2,15 +2,6 @@ body {
     background-color: #111;
 }
 
-h1 {
-}
-
-.wrap-div {
-    padding: 10vw 5% 0 5%;
-    max-width: 1000px;
-    margin: auto;
-}
-
 #service-body {
     padding: 0 5%;
 }
@@ -20,15 +11,16 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 5%;
 }
-
-#service-head 
 
 #service-head p {
     font-size: 20px;
     margin-top: 25%;
     margin-bottom: 0;
     line-height: 1.1;
+    width: 80%;
+    
 }
 
 /*---------------------- service body ------------------------*/
@@ -46,6 +38,10 @@ h1 {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+}
+
+#service-content h1 {
+    margin-bottom: 15px;
 }
     
 #service-content h3 {
@@ -95,11 +91,6 @@ hr {
     #service-content h4 {
         font-size: 22px;
         font-weight: 600;
-    }
-    
-    #service-content P {
-        width: 700px;
-        margin: 2% auto;
     }
     
     .service {
