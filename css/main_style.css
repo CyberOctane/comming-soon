@@ -1510,12 +1510,6 @@ p {
         top: 300%;
     }
 
-    #scroll-down-arrow img {}
-
-}
-
-@media (min-width:1600px) {
-    #hello h1 {}
 }
 
 /* 
@@ -1909,10 +1903,6 @@ p {
 
 #works-slide .container {
     padding: 0;
-}
-
-#works-slide .swiper-slide {
-    /* padding of .project for larger screens x2 */
 }
 
 .project {
@@ -2428,9 +2418,6 @@ p {
 #contact {
     flex-direction: column;
     justify-content: center;
-}
-
-#contact .section-wrap {
 }
 
 #contact .phrase {
