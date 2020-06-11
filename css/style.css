@@ -695,7 +695,8 @@ p {
         height: 10vh;
     }
 
-    .hover-text {
+    /* Hid the .hover-text */
+    #cyberlogo:hover .hover-text {
         display: inline;
         align-self: center;
         transition: width 0.4s ease;
