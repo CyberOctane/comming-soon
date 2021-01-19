@@ -976,6 +976,7 @@ p {
        left: 5%;
        transform: translateX(0%) translateY(-50%);
        height: 50vh;
+       width: auto;
        display: flex;
        flex-direction: column;
        justify-content: center;
