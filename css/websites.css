@@ -1,0 +1,243 @@
+#websites .content {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap-div {
+    padding: 0 5%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap-div p {
+    text-align: center;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+#websites .hero {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+#websites .hero .wrap-div {
+    height: auto;
+}
+
+#websites .hero .down-arrow {
+    position: absolute;
+    bottom: 80px;
+    width: 25px;
+}
+
+#websites .packages {
+    margin-top: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#websites .package {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#websites .package .img-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#websites .package img {
+    width: 100%;
+}
+
+#websites .package .pack-info {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#websites .package h2 {
+    color: #111;
+    font-size: 40px;
+}
+
+#websites .package h4 {
+    color: #111;
+}
+
+#websites .package p {
+    color: #111;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+#websites .package hr {
+    border: 0;
+    border-bottom: 2px solid #111;
+    margin: 20px 0;
+}
+
+#websites .package ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.package .action {
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #111;
+    background-color: #ffea00;
+}
+    
+#websites .link-btn {
+    width: 90%;
+    border: floralwhite 3px solid;
+    padding: 2% 5%;
+}
+
+@media(min-width:768px){
+
+    #websites h1 {
+        padding: 5% 0;
+        text-align: 
+    }
+
+    #websites .content {
+        padding-top: 10%;
+    }
+
+    .content .wrap-div {
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .wrap-div p {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .content h4 {
+        margin-bottom: 12px;
+    }
+    
+    #websites .packages {
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5vw;
+        grid-row-gap: 5vw;
+    }
+
+    #websites .package {
+        width: 37.5vw;
+        min-height: 100%;
+        margin: 0;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    #websites .link-btn {
+        height: auto;
+        margin: 5% auto;
+    }
+
+    #websites .link-btn img {
+        width: 15%;
+    }
+}
+
+@media(min-width:1200px) {
+    
+    #websites .content {
+        padding-top: 0;
+    }
+    
+    .wrap-div {
+        margin: auto;
+    }
+        
+    .wrap-div p {
+        margin-bottom: 4%;
+    }
+    
+    #websites .package h2 {
+        font-size: 26px;
+        letter-spacing: 0.4em;
+    }
+    
+    #websites .link-btn img {
+        width: 8%;
+    }
+    
+    #websites .packages {
+        width: auto;
+        grid-template-columns: 22vw 22vw 22vw 22vw;
+        grid-template-rows: auto;
+        grid-row-gap: 0;
+        grid-column-gap: 1vw;
+    }
+    
+    #websites .package {
+        width: auto;
+        min-height: auto;
+        height: 100%;
+    }
+    
+    #websites .package .img-box {
+        height: auto;
+    }
+
+    #websites .package img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #websites .package .pack-info {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .package .action {
+        color: white;
+        background-color: #111;
+    }
+    
+    .package .action:hover {
+        color: #111;
+        background-color: #ffea00;
+    }
+    
+    #websites .link-btn {
+        width: 50%;
+        border: floralwhite 3px solid;
+        padding: 2% 5%;
+    }
+    
+    #websites .link-btn h2 {
+        font-size: 2vw;
+    }
+
+}

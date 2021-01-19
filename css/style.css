@@ -2415,12 +2415,12 @@ p {
     ===========================
 */
 
-#contact {
+.contact  {
     flex-direction: column;
     justify-content: center;
 }
 
-#contact .phrase {
+.contact .phrase {
     height: 100%;
     justify-content: space-between;
 }
@@ -2429,6 +2429,7 @@ p {
     position: relative;
     align-self: center;
     height: 100%;
+    width: 100%;
     padding-top: 6vh;
     display: flex;
     flex-direction: column;
@@ -2441,9 +2442,24 @@ p {
     padding: 4% 0;
 }
 
-.social-media.contact {
+.contact-method {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px
+} 
+
+.contact-method h5 {
+    width: 25%;
+}
+
+.contact-method a {
+    font-size: 22px;
+}
+
+.social-media {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     overflow: hidden;
     text-align: center;
     transition: width 0.8s 0.8s ease;
@@ -2453,19 +2469,29 @@ p {
     width: 0%;
 }
 
-#contact .social-media-item i {
+.contact .social-media-item i {
     font-size: 6vw;
-    padding-top: 2vh;
-    padding-right: 4vh;
 }
 
-#contact .plusImg {
+.contact-method.location {
+    justify-content: flex-end;
+}
+
+.contact .plusImg {
     position: absolute;
     right: 0;
 }
 
-#contact .plusImg.bottom {
+.contact-info .dash {
+    position: absolute;
+} 
+
+.contact-info .bottom {
     bottom: 0;
+}
+
+.contact-info .top {
+    top: 0;
 }
 
 @media (min-aspect-ratio:1/1) {
@@ -2478,16 +2504,25 @@ p {
     .contact-info {
         padding: 0;
         width: 50%;
+        justify-content: center
     }
 
     .contact-info h1 {
         font-size: 4vw;
     }
+    
+    .contact-method {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .contact-method a{
+        font-size: 35px;
+    }
 
-    #contact .social-media-item i {
+    .contact .social-media-item i {
         font-size: 3.5vh;
-        padding-top: 1vh;
-        padding-right: 2.5vw;
+        padding-top: 0;
     }
 
     .social-media.contact {
@@ -2498,7 +2533,7 @@ p {
 
 @media (min-width:1600px) {
     
-    #contact .social-media-item i {
+    .contact .social-media-item i {
         font-size: 3vh;
         padding-top: 1vh;
         padding-right: 1.8vw;
