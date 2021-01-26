@@ -1622,6 +1622,8 @@ p {
     ===========================
 */
 
+
+
 .services.section {
     height: auto;
     padding: 100px 0 50px 0;
@@ -3403,6 +3405,8 @@ p {
 
 /*------------- Services HTML -------------*/
 
+/*
+
 #service-body {
     padding: 0 5%;
 }
@@ -3439,11 +3443,11 @@ p {
     text-align: center;
 }
 
-#service-content h1 {
+.service-content h1 {
     margin-bottom: 15px;
 }
     
-#service-content h3 {
+.service-content h3 {
     padding-top: 8%;
 }
 
@@ -3495,6 +3499,8 @@ p {
     }
 
 }
+
+*/
 
 /*------------- Services-02 HTML -------------*/
 
@@ -3519,7 +3525,13 @@ p {
     
 }
 
+.service-type h3 {
+    margin-bottom: 10px;
+    padding-top: 0;
+}
+
 .services-all {
+    margin: 40px 0;
     display: flex;
     flex-direction: column;
 }
@@ -3530,32 +3542,35 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .service-indiv div {
     text-align: left;
 }
 
-#service-content h1 {
-    margin-bottom: 15px;
-}
-    
-#service-content h3 {
-    padding-top: 8%;
-}
-
 .service-indiv img {
-    width: 18vw;
+    width: 12vw;
+    margin-right: 10vw;
 }
 
 .service-indiv h4 {
     font-size: 3vh;
-    padding-top: 10%;
+    padding-top: 0;
+    padding-bottom: 6px;
+    text-align: left;
+}
+
+.service-indiv h5 {
+    font-weight: 300;
 }
 
 .service-indiv hr {
     width: 100%;
+}
+
+.service-content .tick-line {
+    margin-top: 0;
 }
 
 @media(min-width:768px) {
@@ -3573,27 +3588,66 @@ p {
         margin-bottom: 2%;
     }
     
-    #service-content {
-        text-align: center;
+    .service-content {
+        width: 80vw;
+        margin: 100px auto;
         padding: 0;
-        padding-top: 5%;
+        text-align: center;
     }
     
-    #service-content h1 {
-        font-size: 10vh;
+    .service-type {
     }
     
-    #service-content h4 {
-        font-size: 22px;
-        font-weight: 600;
+    .services-all {
+        margin: 70px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .services-all hr {
+        display: none;
+    }
+    
+    .service-type .lg-only {
+        width: 100%;
     }
     
     .service-indiv {
         width: 25%;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
     }
     
     .service-indiv img {
-        width: 50%;
+        width: 80px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .service-indiv div {
+        text-align: center;
+    }
+    
+    .service-indiv div h4 {
+        text-align: center;
+        font-size: 20px;
+        transition: letter-spacing 0.2s;
+    }
+    
+    .service-indiv h5 {
+        opacity: 0;
+        transition: font-size 0.2s, letter-spacing 0.2s;
+    }
+    
+    .service-indiv:hover h4 {
+        letter-spacing: 0.1em;
+    }
+
+    .service-indiv:hover h5 {
+        opacity: 1;
+        letter-spacing: 0.1em;
     }
 
 }
