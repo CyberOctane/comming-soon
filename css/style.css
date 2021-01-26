@@ -2876,25 +2876,28 @@ p {
     ===========================
 */
 
-#team {
+.team.section {
+    height: auto;
     flex-direction: column;
     justify-content: center;
 }
 
-#team .section-wrap {
+.team.section .section-wrap {
     flex-direction: column;
     height: auto;
 }
 
-#team .phrase {
+.team.section .phrase {
     width: 100%;
+    padding: 50px 0;
     margin-bottom: 5%;
     align-self: flex-start;
 }
 
 #team-carousel {
     width: 90%;
-    height: 60vh;
+    /*height: 60vh;*/
+    height: auto;
 }
 
 .member {
@@ -3570,7 +3573,7 @@ p {
 }
 
 .service-content .tick-line {
-    margin-top: 0;
+    margin-top: 0
 }
 
 @media(min-width:768px) {
