@@ -3014,10 +3014,13 @@ p {
 
 @media(min-width:992px) {
     
-    #team .phrase {
-        margin-bottom: 6%;
+    .team.section .phrase {
+        margin-bottom: 0px;
+        padding: 0;
         width: 100%;
         align-self: flex-start;
+        align-items: center;
+        text-align: center;
     }
 
     #team-carousel {
