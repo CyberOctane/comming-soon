@@ -95,7 +95,6 @@ body {
 
 .section {
     position: relative;
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -141,6 +140,11 @@ body {
         max-width: 1000px;
         margin: auto;
     }
+    
+    .section {
+        height: 100vh;
+    }
+
 }
 
 /*---- link buttons classes ----*/
@@ -553,7 +557,7 @@ p {
 
 @media (min-width:1900px) {
     p {
-        font-size: 19px;
+        font-size: 22px;
         line-height: 25px;
     }
 }
@@ -1166,7 +1170,6 @@ p {
 
 #scroll-down-arrow img {
     width: 25px;
-    transform: rotate(90deg);
 }
 
 @keyframes name {
@@ -1519,6 +1522,11 @@ p {
     ===========================
 */
 
+.about.section {
+    height: auto;
+    padding: 150px 0;
+}
+
 #about-us .tick-line {
     top: 5%;
 }
@@ -1560,6 +1568,10 @@ p {
 }
 
 @media(min-width:768px) {
+    
+    .about.section {
+        height: 100vh;
+    }
 
     #about-us .tick-line {
         top: 9vh;
@@ -1582,6 +1594,7 @@ p {
 
     #us-phrase {
         padding-right: 5%;
+        padding-bottom: 0;
         justify-content: center;
         text-align: left;
     }
@@ -1609,13 +1622,13 @@ p {
     ===========================
 */
 
-#services {
-    min-height: 100vh;
+.services.section {
     height: auto;
+    padding: 100px 0 50px 0;
     flex-direction: column;
 }
 
-#services .section-wrap {
+.services.section .section-wrap {
     height: auto;
     padding: 0;
     overflow: hidden;
@@ -1624,14 +1637,14 @@ p {
     justify-content: center;
 }
 
-#services .phrase {
+.services.section .phrase {
     width: 100%;
     justify-content: space-between;
     margin-bottom: 10%;
 }
 
-#services .link-btn {
-    margin-top: 10%;
+.services.section p.copy {
+    margin: 20px 10px 10px 0;
 }
 
 #services-wrap {
@@ -1738,6 +1751,11 @@ p {
 }
 
 @media(min-width:768px) {
+    
+    .services.section {
+        height: 100vh;
+        padding: 0;
+    }
 
     #services .section-wrap {
         width: 70%;
@@ -1746,6 +1764,23 @@ p {
         overflow: hidden;
         justify-content: flex-start;
         align-items: center;
+    }
+    
+    .services.section .phrase {
+        align-items: flex-start;
+    }
+    
+    .services.section h1 {
+        align-self: flex-start;
+    }
+    
+    .services.section p {
+        max-width: 600px;
+        align-self: flex-start;
+    }
+    
+    .services.section .link-btn {
+        margin-top: 20px;
     }
 
     #services-wrap {
@@ -1841,6 +1876,7 @@ p {
         height: inherit;
         width: 40vw;
         justify-content: space-between;
+        align-items: flex-start;
         margin-bottom: 0%;
     }
 }
@@ -1850,6 +1886,10 @@ p {
     == Projects Styling ==
     ===========================
 */
+
+.projects.section {
+    height: auto;
+}
 
 #works .container-fluid {
     width: 80%;
@@ -1916,7 +1956,10 @@ p {
 
 .project-content {
     height: 100%;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .project a {
@@ -1929,6 +1972,7 @@ p {
 
 .project-info {
     position: absolute;
+    z-index: 1;
     width: 26vw;
     height: inherit;
     /*background-color: rgba(20, 20, 20, 0.9);*/
@@ -1974,21 +2018,17 @@ p {
 }
 
 .works-img {
-    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
    
 .works-img picture {
-    min-width: 100%;
-    height: 100%;
+    width: 100%;
+    position: relative;
+    display: block;
 }
 
 .project picture img {
-    height: auto;
-    width: 100%;
+    width: inherit;
 }
 
 @media (min-width:768px) {
@@ -2118,6 +2158,12 @@ p {
     == Clients Styling ==
     ===========================
 */
+
+.clients.section {
+    height: auto;
+    padding: 5vh 0 5vh 0
+}
+
 #clients .row {
     justify-content: center;
     padding: 0;
@@ -2166,6 +2212,11 @@ p {
 }
 
 @media(min-width:576px) {
+    
+    .clients.section {
+        height: 100vh;
+        padding: 0;
+    }
     
     .client-list {
         width: 80%;
@@ -2225,200 +2276,23 @@ p {
 
 /* 
     ===========================
-    == Team Styling ==
-    ===========================
-*/
-
-#team {
-    flex-direction: column;
-    justify-content: center;
-}
-
-#team .section-wrap {
-    flex-direction: column;
-    height: auto;
-}
-
-#team .phrase {
-    width: 100%;
-    margin-bottom: 5%;
-    align-self: flex-start;
-}
-
-#team-carousel {
-    width: 90%;
-    height: 60vh;
-}
-
-.member {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-}
-
-.show {
-    display: flex;
-}
-
-.member-photo {
-    width: 40vw;
-    height: 40vw;
-    background-color: #F8EF00;
-}
-
-.member-photo img {
-    width: 100%;
-}
-
-.member-details {
-    width: 40vw;
-    text-align: center;
-}
-
-.member-details h5 {
-    margin: 4% 0;
-}
-
-.member-details p {
-    color: floralwhite;
-    font-family: 'barlow semi condensed';
-    font-weight: 100;
-    line-height: 20px;
-    padding-right: 4%;
-}
-
-#team .shift {
-    padding-left: 10%;
-}
-
-.slide-dot {
-    display: inline-block;
-    height: 2vh;
-    width: 2vh;
-    border-radius: 50%;
-    background-color: aqua;
-    cursor: pointer;
-}
-
-#temp-link {
-    position: fixed;
-    z-index: 5;
-    top: 50%;
-    left: 50%;
-}
-
-#team .swiper-nav {
-    position: absolute;
-    top: 50%;
-    height: 5vw;
-    background-image: url(../img/svg/arrow_left_01.svg);
-}
-
-#team .swiper-button-prev {
-    transform: rotate(180deg);
-}
-
-
-@media(min-width:575px) {
-    #team {
-        flex-direction: column;
-    }
-    
-    #team-carousel {
-        width: 450px;
-        height: 65vh;
-    }
-    
-    .swiper-wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .member {
-        width: 50%;
-        height: auto;
-        justify-content: flex-start;
-    }
-    
-    .member-photo {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .member-details {
-        width: 30vh;
-    }
-    
-    #team .swiper-nav {
-        top: 100%;
-        left: 52%;
-    }
-    
-    #team .swiper-button-prev {
-        left: 42%;
-    }
-    
-}
-
-@media(min-width:992px) {
-    
-    #team .phrase {
-        margin-bottom: 6%;
-        width: 100%;
-        align-self: flex-start;
-    }
-
-    #team-carousel {
-        width: 100%;
-        padding-top: 2%;
-    }
-
-    #team .owl-prev,
-    #team .owl-next {
-        display: none;
-    }
-
-    .member {
-        width: 25%;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .member-photo {
-        width: 15vw;
-        height: 15vw; /* ~ to width */
-    }
-
-    .member-details {
-        width: 15vw;
-        text-align: left;
-    }
-
-    .member-details p {
-        color: floralwhite;
-        font-family: 'barlow semi condensed';
-        font-weight: 100;
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    #team .swiper-nav {
-        display: none;
-    }
-
-}
-
-/* 
-    ===========================
     == Contact Styling ==
     ===========================
 */
 
-.contact  {
+.contact.section  {
+    height: auto;
+    padding: 100px 0 50px 0;
     flex-direction: column;
     justify-content: center;
+}
+
+.contact .tick-line {
+    top: 0;
+}
+
+.contact .tick-line .tick {
+    position: relative;
 }
 
 .contact .phrase {
@@ -2496,6 +2370,11 @@ p {
 }
 
 @media (min-aspect-ratio:1/1) {
+    
+    .contact.section {  
+        height: 100vh;
+        padding: 0;
+    }
 
     .section-wrap {
         height: 70%;
@@ -2512,9 +2391,8 @@ p {
         font-size: 4vw;
     }
     
-    .contact-method {
-        flex-direction: column;
-        align-items: flex-start;
+    .contact-method h5 {
+        width: 20%;
     }
     
     .contact-method a{
@@ -2580,6 +2458,13 @@ p {
     flex-direction: column;
     align-items: center;
 }
+
+
+/* 
+    ===========================
+    == About Us ==
+    ===========================
+*/
 
 #about .hero {
     height: 100vh;
@@ -2983,6 +2868,194 @@ p {
 
 }
 
+/* 
+    ===========================
+    == Team Styling ==
+    ===========================
+*/
+
+#team {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#team .section-wrap {
+    flex-direction: column;
+    height: auto;
+}
+
+#team .phrase {
+    width: 100%;
+    margin-bottom: 5%;
+    align-self: flex-start;
+}
+
+#team-carousel {
+    width: 90%;
+    height: 60vh;
+}
+
+.member {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.show {
+    display: flex;
+}
+
+.member-photo {
+    width: 40vw;
+    height: 40vw;
+    background-color: #F8EF00;
+}
+
+.member-photo img {
+    width: 100%;
+}
+
+.member-details {
+    width: 40vw;
+    text-align: center;
+}
+
+.member-details h5 {
+    margin: 4% 0;
+}
+
+.member-details p {
+    color: floralwhite;
+    font-family: 'barlow semi condensed';
+    font-weight: 100;
+    line-height: 20px;
+    padding-right: 4%;
+}
+
+#team .shift {
+    padding-left: 10%;
+}
+
+.slide-dot {
+    display: inline-block;
+    height: 2vh;
+    width: 2vh;
+    border-radius: 50%;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#temp-link {
+    position: fixed;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+}
+
+#team .swiper-nav {
+    position: absolute;
+    top: 50%;
+    height: 5vw;
+    background-image: url(../img/svg/arrow_left_01.svg);
+}
+
+#team .swiper-button-prev {
+    transform: rotate(180deg);
+}
+
+
+@media(min-width:575px) {
+    #team {
+        flex-direction: column;
+    }
+    
+    #team-carousel {
+        width: 450px;
+        height: 65vh;
+    }
+    
+    .swiper-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .member {
+        width: 50%;
+        height: auto;
+        justify-content: flex-start;
+    }
+    
+    .member-photo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .member-details {
+        width: 30vh;
+    }
+    
+    #team .swiper-nav {
+        top: 100%;
+        left: 52%;
+    }
+    
+    #team .swiper-button-prev {
+        left: 42%;
+    }
+    
+}
+
+@media(min-width:992px) {
+    
+    #team .phrase {
+        margin-bottom: 6%;
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    #team-carousel {
+        width: 100%;
+        padding-top: 2%;
+    }
+
+    #team .owl-prev,
+    #team .owl-next {
+        display: none;
+    }
+
+    .member {
+        width: 25%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .member-photo {
+        width: 15vw;
+        height: 15vw; /* ~ to width */
+    }
+
+    .member-details {
+        width: 15vw;
+        text-align: left;
+    }
+
+    .member-details p {
+        color: floralwhite;
+        font-family: 'barlow semi condensed';
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    #team .swiper-nav {
+        display: none;
+    }
+
+}
+
+
 /*------------- All Projects -------------*/
 
 #projects-grid {
@@ -3381,6 +3454,108 @@ p {
 .service-indiv h4 {
     font-size: 3vh;
     padding-top: 10%;
+}
+
+@media(min-width:768px) {
+    
+    .Vheight {
+        padding-top: 10vh;
+    }
+    
+    #service-head {
+        padding-top: 10vh
+    }
+    
+    #service-head p {
+        margin-top: 8%;
+        margin-bottom: 2%;
+    }
+    
+    #service-content {
+        text-align: center;
+        padding: 0;
+        padding-top: 5%;
+    }
+    
+    #service-content h1 {
+        font-size: 10vh;
+    }
+    
+    #service-content h4 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .service-indiv {
+        width: 25%;
+    }
+    
+    .service-indiv img {
+        width: 50%;
+    }
+
+}
+
+/*------------- Services-02 HTML -------------*/
+
+#service-body {
+    padding: 0 5%;
+}
+
+#service-head {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+#service-head p {
+    font-size: 20px;
+    margin-top: 25%;
+    margin-bottom: 0;
+    line-height: 1.1;
+    width: 80%;
+    
+}
+
+.services-all {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-indiv {
+    width: 100%;
+    padding: 11% 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-indiv div {
+    text-align: left;
+}
+
+#service-content h1 {
+    margin-bottom: 15px;
+}
+    
+#service-content h3 {
+    padding-top: 8%;
+}
+
+.service-indiv img {
+    width: 18vw;
+}
+
+.service-indiv h4 {
+    font-size: 3vh;
+    padding-top: 10%;
+}
+
+.service-indiv hr {
+    width: 100%;
 }
 
 @media(min-width:768px) {
