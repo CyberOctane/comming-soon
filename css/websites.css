@@ -89,11 +89,16 @@
     margin: 20px 0;
 }
 
-#websites .package ul {
+.package ul {
     display: flex;
     flex-direction: column;
     padding: 0;
     list-style-type: none;
+}
+
+.package ul li {
+    line-height: 1;
+    padding-bottom: 10px;
 }
 
 .package .action {
