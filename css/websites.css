@@ -67,7 +67,7 @@
     height: 100%;
 }
 
-#websites .package h2 {
+.package h2 {
     color: #111;
     font-size: 40px;
 }
@@ -148,12 +148,26 @@
     #websites .package {
         width: 37.5vw;
         min-height: 100%;
+        height: 100%;
         margin: 0;
         background-color: white;
         border-radius: 20px;
         padding: 20px;
     }
-
+    
+    #websites .package .pack-info {
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .package h2 {
+        font-size: 3vw;
+        letter-spacing: 0.2em;
+    }
+    
     #websites .link-btn {
         height: auto;
         margin: 5% auto;
@@ -176,11 +190,6 @@
         
     .wrap-div p {
         margin-bottom: 4%;
-    }
-    
-    #websites .package h2 {
-        font-size: 26px;
-        letter-spacing: 0.4em;
     }
     
     #websites .link-btn img {
@@ -210,12 +219,8 @@
         height: auto;
     }
     
-    #websites .package .pack-info {
-        padding: 20px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .package h2 {
+        font-size: 2vw;
     }
     
     .package .action {
